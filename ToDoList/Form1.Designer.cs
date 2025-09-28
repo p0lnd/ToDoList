@@ -104,6 +104,7 @@
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDelete
             // 
@@ -114,6 +115,7 @@
             this.buttonDelete.TabIndex = 7;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // checkBoxCompleted
             // 
@@ -125,6 +127,7 @@
             this.checkBoxCompleted.TabIndex = 8;
             this.checkBoxCompleted.Text = "Выполнено";
             this.checkBoxCompleted.UseVisualStyleBackColor = true;
+            this.checkBoxCompleted.Click += new System.EventHandler(this.checkBoxCompleted_CheckedChanged);
             // 
             // label2
             // 
