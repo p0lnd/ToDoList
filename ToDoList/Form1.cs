@@ -24,7 +24,7 @@ namespace ToDoList
         private void InitializeCategories()
         {
             comboBoxCategory.Items.AddRange(new string[] {
-                "Работа", "Учеба", "Личное", "Здоровье", "Дом"
+                "Работа", "Учеба", "Личное", "Прочее"
             });
             comboBoxCategory.SelectedIndex = 0;
             numericUpDownPriority.Minimum = 1;
