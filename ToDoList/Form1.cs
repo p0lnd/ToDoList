@@ -93,5 +93,29 @@ namespace ToDoList
                 RefreshTasksList();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tasks = tasks.OrderBy(t => t.Title).ToList();
+            RefreshTasksList();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tasks = tasks.OrderBy(t => t.Category).ToList();
+            RefreshTasksList();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tasks = tasks.OrderBy(t => t.Priority).ToList();
+            RefreshTasksList();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tasks = tasks.OrderBy(t => t.DueDate).ToList();
+            RefreshTasksList();
+        }
     }
 }
