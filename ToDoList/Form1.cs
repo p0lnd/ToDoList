@@ -13,6 +13,7 @@ namespace ToDoList
     public partial class Form1 : Form
     {
         private List<Task> tasks;
+        private int editingIndex = -1;
 
         public Form1()
         {
@@ -117,5 +118,36 @@ namespace ToDoList
             tasks = tasks.OrderBy(t => t.DueDate).ToList();
             RefreshTasksList();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (listBoxTasks.SelectedIndex >= 0)
+            {
+                editingIndex = listBoxTasks.SelectedIndex;
+                Task task = tasks[editingIndex];
+
+                textBoxTitle.Text = task.Title;
+                dateTimePickerDueDate.Value = task.DueDate;
+                numericUpDownPriority.Value = task.Priority;
+                comboBoxCategory.SelectedItem = task.Category;
+
+                textBoxTitle.Focus();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (editingIndex >= 0 && !string.IsNullOrWhiteSpace(textBoxTitle.Text))
+            {
+                tasks[editingIndex].Title = textBoxTitle.Text.Trim();
+                tasks[editingIndex].DueDate = dateTimePickerDueDate.Value;
+                tasks[editingIndex].Category = comboBoxCategory.SelectedItem?.ToString();
+                tasks[editingIndex].Priority = (int)numericUpDownPriority.Value;
+
+                editingIndex = -1;
+                RefreshTasksList();
+                textBoxTitle.Clear();
+            }
+        }
     }
-}
+}    

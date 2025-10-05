@@ -44,6 +44,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPriority)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +112,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(16, 207);
+            this.buttonAdd.Location = new System.Drawing.Point(12, 243);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(109, 43);
             this.buttonAdd.TabIndex = 6;
@@ -123,7 +125,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonDelete.Location = new System.Drawing.Point(174, 207);
+            this.buttonDelete.Location = new System.Drawing.Point(156, 243);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(109, 43);
             this.buttonDelete.TabIndex = 7;
@@ -136,7 +138,7 @@
             this.checkBoxCompleted.AutoSize = true;
             this.checkBoxCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.checkBoxCompleted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.checkBoxCompleted.Location = new System.Drawing.Point(315, 217);
+            this.checkBoxCompleted.Location = new System.Drawing.Point(16, 213);
             this.checkBoxCompleted.Name = "checkBoxCompleted";
             this.checkBoxCompleted.Size = new System.Drawing.Size(125, 24);
             this.checkBoxCompleted.TabIndex = 8;
@@ -180,7 +182,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(16, 275);
+            this.button1.Location = new System.Drawing.Point(12, 308);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 52);
             this.button1.TabIndex = 12;
@@ -191,7 +193,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(166, 275);
+            this.button2.Location = new System.Drawing.Point(156, 308);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 52);
             this.button2.TabIndex = 13;
@@ -202,7 +204,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button3.Location = new System.Drawing.Point(303, 275);
+            this.button3.Location = new System.Drawing.Point(293, 308);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 52);
             this.button3.TabIndex = 14;
@@ -213,7 +215,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button4.Location = new System.Drawing.Point(448, 275);
+            this.button4.Location = new System.Drawing.Point(427, 308);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(117, 52);
             this.button4.TabIndex = 15;
@@ -221,12 +223,40 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.Location = new System.Drawing.Point(289, 243);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(121, 43);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Изменить";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button6.Location = new System.Drawing.Point(427, 243);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(121, 43);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Сохранить изменения";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(587, 565);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -269,6 +299,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 

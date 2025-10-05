@@ -52,8 +52,6 @@ namespace ToDoList
             get { return priority; }
             set { priority = value; }
         }
-
-        // Метод для отображения в ListBox
         public override string ToString()
         {
             string status = isCompleted ? "[✓]" : "[ ]";
